@@ -1,7 +1,8 @@
 
 ***
 ## OVERVIEW
-This project applies machine learning to predict breast cancer molecular subtypes and patient survival outcomes. It provides a cost-effective, data-driven alternative to expensive molecular tests like PAM50, helping clinicians make informed treatment and prognosis decisions.
+This project applies machine learning to predict breast cancer molecular subtypes and patient survival outcomes. It provides a cost-effective, data-driven alternative to molecular test
+(PAM50 Assay), helping doctors make informed treatment and prognosis decisions.
 
 ## PROBLEM STATEMENT
 This project aims to predict breast cancer subtypes and survival outcomes using machine learning, providing an accessible alternative for hospitals without advanced genetic tests like PAM50 to support better treatment decisions.
