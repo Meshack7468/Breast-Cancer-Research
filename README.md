@@ -59,7 +59,7 @@ This project uses predictive statistics and descriptive statistics to analyze da
 
 ![alternative](./Images/SubtypevsHormoneTherapy.png)
 
-* Luminal A and Luminal B show the best response to hormone therapy. These Pam50 subtypes depend on estrogen or progesterone hormone to grow, and they are often treated by blocking these hormones
+* Luminal A and Luminal B show the best response to hormone therapy. These Pam50 subtypes usually depend on estrogen or progesterone hormone to grow, and they can often be treated by blocking these hormones
 
 #### ER and PR Status VS Survival rate
 
