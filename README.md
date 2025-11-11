@@ -52,7 +52,7 @@ This project uses predictive statistics and descriptive statistics to analyze da
 
 ![alternative](./Images/SubtypevsChemotherapy.png)
 
-* Luminal A show the highest resistance to chemotherapy, indicating a low response rate to this type of treatment followed by Luminal B.
+* Luminal A show the highest resistance to chemotherapy, suggesting slow response to this type of treatment.
 * Basal and HER2 subtypes show good responsiveness to chemotherapy.
 
 #### Comparing How Different Molecular Subtype Respond to Hormone therapy
