@@ -46,7 +46,7 @@ This project uses predictive statistics and descriptive statistics to analyze da
 
 ![alternative](./Images/SubtypeVsSurvival.png)
 
-* Comparing molecular subtypes vs survival we observe that Luminal A is associated with best survival status (highest number of living patients) this may suggest that it respond well to treatment
+* Comparing survival across molecular subtypes, Luminal A shows the best survival outcomes (highest number of living patients), indicating that this subtype responds well to treatment.
 
 #### Comparing How Different Molecular Subtype Respond to Chemotherapy
 
@@ -78,7 +78,7 @@ Lower stages (0 and 1) have better survival rates compared to higher stages(2 an
 
 ![alternative](./Images/AgeVsSurvival.png)
 
-Most Deceased patients are of older age. From the plot there are some outliers for the DECEASED class suggesting that there is lower survival rates for some younger women and older women. Middle-aged women (45-70) show the best survival rates. 
+Most deceased patients are older. The plot also shows a few outliers within the deceased group, suggesting that while older patients generally have lower survival rates, some younger women also experience poor outcomes(Below 39). Middle-aged women (45–70 years) show the best survival rates overall.
 
 ## RESULTS
 ### Molecular subtype prediction
@@ -87,7 +87,7 @@ We build 2 models for this task, Random Forest and XGBoost
 * Models performance comparisons.
 Random Forest acheived an Accuracy of 67% and Macro F1-score of 56%
 XGBoost achieved an Accuracy of 67% and Macro F1-score of 54%
-Random Forest is the Best performing model because it has highest Macro F1-score. We compare using Macro F1-score because the classes are imbalanced and we desire to treat each classes equally
+Random Forest is the Best performing model because it has highest Macro F1-score. We compare using Macro F1-score because the classes are imbalanced and we desire to treat each class equally
 
 ### Survival Status Prediction
 Build models that Predict whether a patient is alive or deceased this will allow us to identify high-risk patients who may need closer monitoring or aggressive therapy.
