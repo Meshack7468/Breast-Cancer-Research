@@ -83,7 +83,7 @@ Most deceased patients are older. The plot also shows a few outliers within the 
 ## RESULTS
 ### Molecular subtype prediction
 Classify tumors into molecular subtypes using clinical and genetic features 
-We build 2 models for this task, Random Forest and XGBoost
+2 models were build for this task, Random Forest and XGBoost
 * Models performance comparisons.
 Random Forest acheived an Accuracy of 67% and Macro F1-score of 56%
 XGBoost achieved an Accuracy of 67% and Macro F1-score of 54%
