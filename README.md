@@ -107,17 +107,17 @@ The XGBoost performed better with an Accuracy of 58%, macro F1 score of 0.57 it 
 
 
 ## CONCLUSIONS
-1. Integrate these tools into hospital workflows
-* Use survival and vital prediction model to identify high-risk patients and guide individualized monitoring and treatment decisions.
-* Use molecular subtype prediction model to estimate tumor aggressiveness when full genetic testing is unavailable.
-2. Use feature importance analysis insight to prioritize High-Risk Patients:
-* Older patients(Above 75) , those with larger tumors, higher grade, more positive lymph nodes, should receive closer monitoring.
-3. Personalize treatment planning for each subtype:
-* Luminal A Respond best hormone therapy
-* Luminal B: Respond best to combined hormone and chemo therapy
-* HER2-enriched: Require targeted therapy (e.g., trastuzumab, pertuzumab) these significantly improve survival beyond what surgery alone can achieve.
-* Basal-like: Aggressive tumors that need intensive targeted systemic therapy surgery alone isn’t enough for effective treatment
-* Claudin-low: Benefit most from biological treatments they show limited response to surgery or chemotherapy alone.
+1. Predictive models can help identify high-risk patients and improve clinical decision-making.
+2. Treatment can be adjusted based on the type of  breast cancer  for  the best outcomes.
+3. Prioritize extra care for patients with the highest risk
+4. Tumor stage, age at diagnosis, type of treatment have strong influence survival outcomes
+
+## RECOMMENDATIONS
+ 1. For doctors & clinicians: use survival and vital status prediction models to identify high-risk patients early and adjust treatment intensity.
+ 2. For Hospitals & Cancer Centers:  Embed these predictive tools in clinical workflows to support decisions where genomic testing (PAM50 assay) is unavailable.
+ 3. For Personalised Treatment Planning: Apply Hormone therapy for Luminal A and Hormone therapy + chemotherapy for Luminal B,
+ 4. Focus follow-up and resources on highest-risk patients: for exapmle patients  with Large tumor, High grade, Positive lymph nodes, older patients
+  5. Prioritize public awareness, screening programs & routine check-ups for women to  promote early stage detection.
 
 ****
 
