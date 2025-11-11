@@ -76,6 +76,8 @@ Lower stages (0 and 1) have better survival rates compared to higher stages(2 an
 
 #### How Age at Diagnosis Influence Survival
 
+![alternative](./Images/AgeVsSurvival.png)
+
 Most Deceased patients are of older age. From the plot there are some outliers for the DECEASED class suggesting that there is lower survival rates for some younger women and older women. Middle-aged women (45-70) show the best survival rates. 
 
 ## RESULTS
