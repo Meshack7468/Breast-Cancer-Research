@@ -78,9 +78,9 @@ Lower stages (0 and 1) have better survival rates compared to higher stages(2 an
 
 ![alternative](./Images/AgeVsSurvival.png)
 
-<<<<<<< HEAD
+
 Most deceased patients are older. The plot also shows a few outliers within the deceased group, suggesting that while older patients generally have lower survival rates, some younger women also experience poor outcomes(Below 39). Middle-aged women (45–70 years) show the best survival rates overall.
-=======
+
 Most Deceased patients are of older age. From the plot there are some outliers for the DECEASED class suggesting that there is lower survival rates for some younger women and older women. Middle-aged women (45-70) show the best survival rates.
 
 ## RESULTS
