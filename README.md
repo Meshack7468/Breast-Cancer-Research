@@ -93,7 +93,7 @@ XGBoost achieved an Accuracy of 67% and Macro F1-score of 54%
 Random Forest is the Best performing model because it has highest Macro F1-score. We compare using Macro F1-score because the classes are imbalanced and we desire to treat each class equally
 
 ### Survival Status Prediction
-Build models that Predict whether a patient is alive or deceased this will allow us to identify high-risk patients who may need closer monitoring or aggressive therapy.
+Build models that Predict whether a patient is alive or deceased this will allow us to identify high-risk patients who may need closer monitoring.
 * Models performance comparisons
 The Random Forest model performed best for this prediction compared to Logistic Regression model. It achieved an Accuracy of 73% and 
 ROC-AUC of 79% while Logistic Regression model have an Accuracy of 68% and ROC-AUC of 77%, we compare using ROC-AUC because this is a binary classification
@@ -119,16 +119,16 @@ The XGBoost performed better with an Accuracy of 58%, macro F1 score of 0.57 it 
  1. For doctors & clinicians: use survival and vital status prediction models to identify high-risk patients early and adjust treatment intensity.
  2. For Hospitals & Cancer Centers:  Embed these predictive tools in clinical workflows to support decisions where genomic testing (PAM50 assay) is unavailable.
  3. For Personalised Treatment Planning: Apply Hormone therapy for Luminal A and Hormone therapy + chemotherapy for Luminal B,
- 4. Focus follow-up and resources on highest-risk patients: for exapmle patients  with Large tumor, High grade, Positive lymph nodes, older patients
-  5. Prioritize public awareness, screening programs & routine check-ups for women to  promote early stage detection.
+ 4. Focus follow-up and resources on highest-risk patients: for example patients  with Large tumor, High grade, Positive lymph nodes, older aged patients
+ 5. Prioritize public awareness, screening programs & routine check-ups for women to  promote early stage detection.
 
 ****
 
 ## Repository Structure
 ```
-├── 
+├── Readme
 ├── 
 ├──
 ├── 
-└── 
+└── index
 ```
