@@ -1,22 +1,21 @@
 
 ***
 ## OVERVIEW
-This project applies machine learning to predict breast cancer molecular subtypes and patient survival outcomes. It provides a cost-effective, data-driven alternative to molecular test
-(PAM50 Assay), helping doctors make informed treatment and prognosis decisions.
+This project uses machine learning to predict breast cancer molecular subtypes and patient survival outcomes. These predictions can act as a useful, data-driven substitute for the PAM50 molecular assay, providing more informed treatment choices and prognosis decisions.
 
 ## PROBLEM STATEMENT
-This project aims to predict breast cancer subtypes and survival outcomes using machine learning, providing an accessible alternative for hospitals without advanced genetic tests like PAM50 to support better treatment decisions.
+This project aims to predict breast cancer subtypes and survival outcomes using machine learning, providing an accessible alternative for hospitals without access to genetic tests like PAM50 assay and support better treatment decisions.
 
 ## Business Objectives
 This project aims to create machine learning models that deliver clinical value by:
 
-1. Molecular Subtype Prediction: Developing a model to predict PAM50 + Claudin-low breast cancer subtypes, providing a cost-effective digital alternative to genetic testing for guiding personalized treatment.
-2. Binary Survival Prediction: Predicting patient survival status (Living or Deceased) to help identify high-risk patients early for closer monitoring or targeted therapy.
-3. Multi-class Vital Status Prediction: Classifying survival outcomes as Died of Disease, Died of Other Causes, or Living to distinguish cancer-related deaths and support deeper clinical insight.
+1. Molecular Subtype Prediction: Develop a model to predict PAM50 + Claudin-low breast cancer subtypes, providing a cost-effective digital alternative to genetic testing for guiding personalized treatment.
+2. Binary Survival Prediction: Predicting patient survival status (Living or Deceased) to help identify high-risk patients early for closer monitoring.
+3. Multi-class Vital Status Prediction: Classify survival outcomes as Died of Disease, Died of Other Causes, or Living to distinguish cancer-related deaths.
 4. Deploy the final models [link](https://breast-cancer-predictor-ziud.onrender.com/) 
 
 ## Data Understanding
-The dataset comes from the METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) study — a well-known clinical and genomic breast cancer dataset containing information on 2,509 patients. Each record represents a patient, with 39 features (12 numerical and 27 categorical). The data is stored in a TSV (tab-separated values) format.
+The dataset comes from the METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) study a well-known clinical and genomic breast cancer dataset containing information on 2,509 patients. Each record represents a patient, with 39 features (12 numerical and 27 categorical). The data is stored in a TSV (tab-separated values) format.
 
 Key Features:
 * Pam50 + Claudin-low subtype: Molecular subtype classification (Luminal A, Luminal B, HER2-enriched, Basal-like, Normal-like).
@@ -113,15 +112,15 @@ The XGBoost performed better with an Accuracy of 58%, macro F1 score of 0.57 it 
 1. Predictive models can help identify high-risk patients and improve clinical decision-making.
 2. Treatment can be adjusted based on the type of  breast cancer  for  the best outcomes.
 3. Prioritize extra care for patients with the highest risk
-4. Tumor stage, age at diagnosis, type of treatment have strong influence survival outcomes
+4. Tumor stage, age at diagnosis, type of treatment, Lymph nodes examined positive,  ER/PR/HER2
+status strongly  influence survival outcomes
 
 ## RECOMMENDATIONS
- 1. For doctors & clinicians: use survival and vital status prediction models to identify high-risk patients early and adjust treatment intensity.
- 2. For Hospitals & Cancer Centers:  Embed these predictive tools in clinical workflows to support decisions where genomic testing (PAM50 assay) is unavailable.
- 3. For Personalised Treatment Planning: Apply Hormone therapy for Luminal A and Hormone therapy + chemotherapy for Luminal B,
- 4. Focus follow-up and resources on highest-risk patients: for example patients  with Large tumor, High grade, Positive lymph nodes, older aged patients
- 5. Prioritize public awareness, screening programs & routine check-ups for women to  promote early stage detection.
-
+1. For health centres:  Embed these predictive tools in clinical workflows to support decisions where genomic testing (e.g., PAM50 assay) is unavailable.
+2. For Personalised care: Tailor treatment based on individual characteristic
+3. Focus follow-up and resources on highest-risk patients: Older patients, Large & High grade tumors, more positive lymph nodes
+4.  Prioritize public awareness, screening programs & routine check-ups for women to   promote early stage detection.
+ 
 ****
 
 ## Repository Structure
