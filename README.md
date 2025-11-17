@@ -1,22 +1,21 @@
 
 ***
 ## OVERVIEW
-This project applies machine learning to predict breast cancer molecular subtypes and patient survival outcomes. It provides a cost-effective, data-driven alternative to molecular test
-(PAM50 Assay), helping doctors make informed treatment and prognosis decisions.
+This project uses machine learning to predict breast cancer molecular subtypes and patient survival outcomes. These predictions can act as a useful, data-driven substitute for the PAM50 molecular assay, providing more informed treatment choices and prognosis decisions.
 
 ## PROBLEM STATEMENT
-This project aims to predict breast cancer subtypes and survival outcomes using machine learning, providing an accessible alternative for hospitals without advanced genetic tests like PAM50 to support better treatment decisions.
+This project aims to predict breast cancer subtypes and survival outcomes using machine learning, providing an accessible alternative for hospitals without access to genetic tests like PAM50 assay and support better treatment decisions.
 
 ## Business Objectives
 This project aims to create machine learning models that deliver clinical value by:
 
-* Molecular Subtype Prediction: Developing a model to predict PAM50 + Claudin-low breast cancer subtypes, providing a cost-effective digital alternative to genetic testing for guiding personalized treatment.
-* Binary Survival Prediction: Predicting patient survival status (Living or Deceased) to help identify high-risk patients early for closer monitoring or targeted therapy.
-* Multi-class Vital Status Prediction: Classifying survival outcomes as Died of Disease, Died of Other Causes, or Living to distinguish cancer-related deaths and support deeper clinical insight.
-* Deploy the final models using Streamlit framework
+1. Molecular Subtype Prediction: Develop a model to predict PAM50 + Claudin-low breast cancer subtypes, providing a cost-effective digital alternative to genetic testing for guiding personalized treatment.
+2. Binary Survival Prediction: Predicting patient survival status (Living or Deceased) to help identify high-risk patients early for closer monitoring.
+3. Multi-class Vital Status Prediction: Classify survival outcomes as Died of Disease, Died of Other Causes, or Living to distinguish cancer-related deaths.
+4. Deploy the final models [link](https://breast-cancer-predictor-ziud.onrender.com/) 
 
 ## Data Understanding
-The dataset comes from the METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) study — a well-known clinical and genomic breast cancer dataset containing information on 2,509 patients. Each record represents a patient, with 39 features (12 numerical and 27 categorical). The data is stored in a TSV (tab-separated values) format.
+The dataset comes from the METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) study a well-known clinical and genomic breast cancer dataset containing information on 2,509 patients. Each record represents a patient, with 39 features (12 numerical and 27 categorical). The data is stored in a TSV (tab-separated values) format.
 
 Key Features:
 * Pam50 + Claudin-low subtype: Molecular subtype classification (Luminal A, Luminal B, HER2-enriched, Basal-like, Normal-like).
@@ -88,47 +87,47 @@ Most Deceased patients are of older age. From the plot there are some outliers f
 Classify tumors into molecular subtypes using clinical and genetic features 
 2 models were build for this task, Random Forest and XGBoost
 * Models performance comparisons.
-Random Forest acheived an Accuracy of 67% and Macro F1-score of 56%
-XGBoost achieved an Accuracy of 67% and Macro F1-score of 54%
+Random Forest acheived an Accuracy of 70% and Macro F1-score of 61%
+XGBoost achieved an Accuracy of 70% and Macro F1-score of 60%
 Random Forest is the Best performing model because it has highest Macro F1-score. We compare using Macro F1-score because the classes are imbalanced and we desire to treat each class equally
 
 ### Survival Status Prediction
-Build models that Predict whether a patient is alive or deceased this will allow us to identify high-risk patients who may need closer monitoring or aggressive therapy.
+Build models that Predict whether a patient is alive or deceased this will allow us to identify high-risk patients who may need closer monitoring.
 * Models performance comparisons
-The Random Forest model performed best for this prediction compared to Logistic Regression model. It achieved an Accuracy of 73% and 
-ROC-AUC of 79% while Logistic Regression model have an Accuracy of 68% and ROC-AUC of 77%, we compare using ROC-AUC because this is a binary classification
+The Random Forest model performed best for this prediction compared to Logistic Regression model. It achieved an Accuracy of 77% and 
+ROC-AUC of 83% while Logistic Regression model achieved an Accuracy of 73% and ROC-AUC of 79%, higher ROC-AUC  score for Random Forest meaning the model is better at distinguishing between positive and negative classes.
 Both models are better at predicting deceased patients than living patients, which is clinically important for identifying high-risk individuals.
 Random Forest’s higher ROC-AUC shows it can better capture complex interactions between clinical and molecular features.
 
 ### Vital Status Prediction
 This will help distinguish cancer-related deaths and death from other causes.
 It also reveals which clinical or molecular features are most associated with cancer-specific mortality.
-It also help us identify high-risk patients and knowing who is at risk of dying from cancer allows closer monitoring and guided treatment approach.
-For this part we build a Random Forest, XGBoost and Tuned XGBoost model
+It also help identify high-risk patients and knowing who is at risk of dying from cancer allows closer monitoring and guided treatment approach.
+For this part we build a Random Forest, XGBoost 
 * Models performance comparisons
-The XGBoost performed better with an Accuracy of 58%, macro F1 score of 0.57 it performed better on the minority “DIED OF OTHER CAUSES” class.
+The XGBoost performed better with an Accuracy of 62%, macro F1 score of 59%.
 
 
 ## CONCLUSIONS
 1. Predictive models can help identify high-risk patients and improve clinical decision-making.
 2. Treatment can be adjusted based on the type of  breast cancer  for  the best outcomes.
 3. Prioritize extra care for patients with the highest risk
-4. Tumor stage, age at diagnosis, type of treatment have strong influence survival outcomes
+4. Tumor stage, age at diagnosis, type of treatment, Lymph nodes examined positive,  ER/PR/HER2
+status strongly  influence survival outcomes
 
 ## RECOMMENDATIONS
- 1. For doctors & clinicians: use survival and vital status prediction models to identify high-risk patients early and adjust treatment intensity.
- 2. For Hospitals & Cancer Centers:  Embed these predictive tools in clinical workflows to support decisions where genomic testing (PAM50 assay) is unavailable.
- 3. For Personalised Treatment Planning: Apply Hormone therapy for Luminal A and Hormone therapy + chemotherapy for Luminal B,
- 4. Focus follow-up and resources on highest-risk patients: for exapmle patients  with Large tumor, High grade, Positive lymph nodes, older patients
-  5. Prioritize public awareness, screening programs & routine check-ups for women to  promote early stage detection.
-
+1. For health centres:  Embed these predictive tools in clinical workflows to support decisions where genomic testing (e.g., PAM50 assay) is unavailable.
+2. For Personalised care: Tailor treatment based on individual characteristic
+3. Focus follow-up and resources on highest-risk patients: Older patients, Large & High grade tumors, more positive lymph nodes
+4.  Prioritize public awareness, screening programs & routine check-ups for women to   promote early stage detection.
+ 
 ****
 
 ## Repository Structure
 ```
-├── 
+├── Readme
 ├── 
 ├──
 ├── 
-└── 
+└── index
 ```
