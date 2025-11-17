@@ -125,9 +125,9 @@ status strongly  influence survival outcomes
 
 ## Repository Structure
 ```
+├── images
+├── models
+├──Presentation
 ├── Readme
-├── 
-├──
-├── 
 └── index
 ```
