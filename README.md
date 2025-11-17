@@ -87,25 +87,25 @@ Most Deceased patients are of older age. From the plot there are some outliers f
 Classify tumors into molecular subtypes using clinical and genetic features 
 2 models were build for this task, Random Forest and XGBoost
 * Models performance comparisons.
-Random Forest acheived an Accuracy of 67% and Macro F1-score of 56%
-XGBoost achieved an Accuracy of 67% and Macro F1-score of 54%
+Random Forest acheived an Accuracy of 70% and Macro F1-score of 61%
+XGBoost achieved an Accuracy of 70% and Macro F1-score of 60%
 Random Forest is the Best performing model because it has highest Macro F1-score. We compare using Macro F1-score because the classes are imbalanced and we desire to treat each class equally
 
 ### Survival Status Prediction
 Build models that Predict whether a patient is alive or deceased this will allow us to identify high-risk patients who may need closer monitoring.
 * Models performance comparisons
-The Random Forest model performed best for this prediction compared to Logistic Regression model. It achieved an Accuracy of 73% and 
-ROC-AUC of 79% while Logistic Regression model have an Accuracy of 68% and ROC-AUC of 77%, we compare using ROC-AUC because this is a binary classification
+The Random Forest model performed best for this prediction compared to Logistic Regression model. It achieved an Accuracy of 77% and 
+ROC-AUC of 83% while Logistic Regression model achieved an Accuracy of 73% and ROC-AUC of 79%, higher ROC-AUC  score for Random Forest meaning the model is better at distinguishing between positive and negative classes.
 Both models are better at predicting deceased patients than living patients, which is clinically important for identifying high-risk individuals.
 Random Forest’s higher ROC-AUC shows it can better capture complex interactions between clinical and molecular features.
 
 ### Vital Status Prediction
 This will help distinguish cancer-related deaths and death from other causes.
 It also reveals which clinical or molecular features are most associated with cancer-specific mortality.
-It also help us identify high-risk patients and knowing who is at risk of dying from cancer allows closer monitoring and guided treatment approach.
-For this part we build a Random Forest, XGBoost and Tuned XGBoost model
+It also help identify high-risk patients and knowing who is at risk of dying from cancer allows closer monitoring and guided treatment approach.
+For this part we build a Random Forest, XGBoost 
 * Models performance comparisons
-The XGBoost performed better with an Accuracy of 58%, macro F1 score of 0.57 it performed better on the minority “DIED OF OTHER CAUSES” class.
+The XGBoost performed better with an Accuracy of 62%, macro F1 score of 59%.
 
 
 ## CONCLUSIONS
